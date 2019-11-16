@@ -1,0 +1,54 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * User01
+ *
+ * @ORM\Table(name="User01")
+ * @ORM\Entity
+ */
+class User01
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="Id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="apenom", type="string", length=50, nullable=true)
+     */
+    private $apenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nomusuario", type="string", length=50, nullable=true)
+     */
+    private $nomusuario;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clave", type="decimal", precision=8, scale=0, nullable=true)
+     */
+    private $clave;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=50, nullable=true)
+     */
+    private $email;
+
+
+}
+
